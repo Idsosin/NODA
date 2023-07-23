@@ -1,14 +1,39 @@
-.navbar-default {
-    background: #dc5034;
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-    height: 90px;
-    margin: 0;
-    padding: 20px 20px 40px 20px;
-	transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-   }
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #0B0C10;
+  height: 100px;
+  width: 100%;
+}
+.sidebar {
+  background-color: #45A29E;
+  float: left;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: calc(95vh - 140px); /* рассчитываем высоту с учетом отступов */
+}
+.content {
+  margin-left: 220px; /* учитываем ширину sidebar и отступы */
+  margin-top: 20px;
+  padding: 20px;
+}
+footer {
+  background-color: #1F2833;
+  clear: both;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.logo {
+    color: #66FCF1
+}
+.description {
+    color: #FFFFFF
+}
+a.sideleft:hover{
+    colr: #C5C6C7
+}
