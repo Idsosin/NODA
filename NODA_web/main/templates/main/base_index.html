@@ -1,29 +1,35 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-<header>
-    <h1 class="logo">NODA</h1>
-  </header>
-  <div class="sidebar">
-    <ul class="sideleft">
-      <li ><a href="#" class="sideleft">Гайд по Т-МОДА </a></li>
-      <li><a href="#" class="sideleft">База данных</a></li>
-      <li><a href="#" lass="sideleft">Мероприятия</a></li>
-      <li><a href="#" lass="sideleft">RIP</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <h2>Содержимое страницы</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor sapien ac augue pretium, sit amet venenatis risus laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <div class="header">
+        <div class="header__section">
+            <div class="header__item headerlogo">
+                <img src="{% static 'main/css/img/logo.png' %}" alt="Лого">
+            </div>
+            <div class="header__item headerButton"><a href="#"></a></div>
+        </div>
+        <div class="header__section">
+            <div class="header__item headerButton"><a href="#">Вход</a></div>
+        </div>
+    </div>
 
-  </div>
-  <footer>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar__section">
+                <div class="sidebar__item"><a href="#">Туториал</a></div>
+                <div class="sidebar__item"><a href="#">База Данных</a></div>
+                <div class="sidebar__item"><a href="#">Мероприятия</a></div>
+                <div class="sidebar__item"><a href="#">RIP</a></div>
+            </div>
+        </div>
+    </main>
+    <footer>
     <p class="description">Контакты: info@example.com</p>
     <p class="description">Дополнительная информация</p>
   </footer>
