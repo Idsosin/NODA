@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'NODA_web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'NODA',
+        'USER': 'postgres',
+        'PASSWORD': 'Berserk201620172018',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
